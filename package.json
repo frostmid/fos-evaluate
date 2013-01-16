@@ -1,0 +1,15 @@
+{
+	"name": "fos-evaluate",
+	"description": "simple fun eval with custom scope and cache support",
+	"homepage": "http://futurios.org",
+	"author": {
+		"name": "Sergey Antoninko",
+		"email": "lyxsus@gmail.com"
+	},
+	"version": "0.1.0",
+	"main": "index.js",
+	"dependencies": {
+		"lru-cache": "2.x.x"
+	},
+	"private": true
+}
