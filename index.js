@@ -23,7 +23,12 @@ module.exports = function (source, scope) {
 	var compiled = cache.get (source);
 
 	if (!compiled) {
-		compiled = compile (source, scope);
+		try {
+			compiled = compile (source, scope);
+		} catch (e) {
+			console.error ('evaluation error', e.message, e.stack);
+			throw e;
+		}
 		cache.set (source, compiled);
 	}
 
