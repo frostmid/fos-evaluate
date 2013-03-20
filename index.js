@@ -3,7 +3,7 @@
 var LRU = require ('lru-cache'),
 	cache = LRU ({
 		max: 1000,
-		maxAge: 1000 * 30
+		maxAge: 1000 * 60 * 5
 	});
 
 function compile (source, scope) {
