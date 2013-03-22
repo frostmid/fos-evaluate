@@ -24,7 +24,7 @@ module.exports = function (source, scope) {
 
 	if (!compiled) {
 		try {
-			compiled = compile (source, scope);
+			return compiled = compile (source, scope);
 		} catch (e) {
 			console.error ('evaluation error', e.message, e.stack);
 			throw e;
